@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/tahzeebamna/movieapp.git/static/css/main.e95dbeab.chunk.css",
+    "main.js": "/tahzeebamna/movieapp.git/static/js/main.465fc137.chunk.js",
+    "main.js.map": "/tahzeebamna/movieapp.git/static/js/main.465fc137.chunk.js.map",
+    "runtime-main.js": "/tahzeebamna/movieapp.git/static/js/runtime-main.c71a7629.js",
+    "runtime-main.js.map": "/tahzeebamna/movieapp.git/static/js/runtime-main.c71a7629.js.map",
+    "static/js/2.eb4b6f8a.chunk.js": "/tahzeebamna/movieapp.git/static/js/2.eb4b6f8a.chunk.js",
+    "static/js/2.eb4b6f8a.chunk.js.map": "/tahzeebamna/movieapp.git/static/js/2.eb4b6f8a.chunk.js.map",
+    "static/js/3.a2b6c97c.chunk.js": "/tahzeebamna/movieapp.git/static/js/3.a2b6c97c.chunk.js",
+    "static/js/3.a2b6c97c.chunk.js.map": "/tahzeebamna/movieapp.git/static/js/3.a2b6c97c.chunk.js.map",
+    "index.html": "/tahzeebamna/movieapp.git/index.html",
+    "static/css/main.e95dbeab.chunk.css.map": "/tahzeebamna/movieapp.git/static/css/main.e95dbeab.chunk.css.map",
+    "static/js/2.eb4b6f8a.chunk.js.LICENSE.txt": "/tahzeebamna/movieapp.git/static/js/2.eb4b6f8a.chunk.js.LICENSE.txt",
+    "static/media/icon-heart-full.4fbe3c19.svg": "/tahzeebamna/movieapp.git/static/media/icon-heart-full.4fbe3c19.svg",
+    "static/media/icon-heart-white.742ca976.svg": "/tahzeebamna/movieapp.git/static/media/icon-heart-white.742ca976.svg",
+    "static/media/logo-rotten-tomatoes.f60abeea.svg": "/tahzeebamna/movieapp.git/static/media/logo-rotten-tomatoes.f60abeea.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c71a7629.js",
+    "static/js/2.eb4b6f8a.chunk.js",
+    "static/css/main.e95dbeab.chunk.css",
+    "static/js/main.465fc137.chunk.js"
+  ]
+}
