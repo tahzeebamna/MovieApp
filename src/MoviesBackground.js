@@ -7,7 +7,7 @@ import Header from './Header'
    // http://www.omdbapi.com/?apikey=[tt3896198&apikey=637dcde2]&
    // http://img.omdbapi.com/?apikey=[yourkey]&
 
-const MoviesBackground = () => {
+const MoviesBackground = ({idArr,setIdArr}) => {
   
     const [inputText, setInputText] = useState("")
     const inputhandler =(e)=>{
@@ -18,12 +18,12 @@ const MoviesBackground = () => {
   return (
         <div className="container">
           <div className="header">
-    <Header/>
+            <Header/>
 
-                <div className="input">
-                        <i className="fa fa-search" aria-hidden="true"></i>
-                        <input type="search" value={inputText} onChange={inputhandler} placeholder="Search movies..."/>
-                </div>
+              <div className="input">
+                <i className="fa fa-search" aria-hidden="true"></i>
+                <input type="search" value={inputText} onChange={inputhandler} placeholder="Search movies..."/>
+              </div>
           </div>
 
           {
@@ -31,15 +31,17 @@ const MoviesBackground = () => {
             ?
               <Moviescard  
                 inputText={inputText}
+                idArr={idArr}
+                setIdArr={setIdArr}
               />
             : 
             <div className="illustrations">
-            <img className="illustration"  src="./images/2.illustrations/illustration-empty-state@2x.png" alt="" />
-            <div className="illus-text">
+              <img className="illustration"  src="./images/2.illustrations/illustration-empty-state@2x.png" alt="" />
+              <div className="illus-text">
                 <h2>Don't Know what to search?</h2>
                 <p>Here's an offer you can't refuse</p>
+              </div>
             </div>
-          </div>
           }
       </div>
     )

@@ -7,7 +7,7 @@ import heartf from './assests/icon-heart-full.svg'
 
 
 
-const MoviesCard = ({inputText}) => {
+const MoviesCard = ({inputText, idArr,setIdArr}) => {
     const [searchMovie, setSearchMovie] = useState([])
 
     useEffect(()=>{
@@ -19,36 +19,57 @@ const MoviesCard = ({inputText}) => {
 
         }
         fetchApi()
+        localStorage.getItem('fav')
     })
+
+    const clickHandler = (id) => {
+        setIdArr([...idArr, id]);
+        localStorage.setItem('fav', idArr)
+        id='';
+    }
+
+    const removeHandler = (id) => {
+        const vali = idArr.filter(i => i != id)
+        setIdArr(vali)
+    }
 
 
     return (
-         <div className="mainCrad1">
+        <div className="mainCrad1">
 
-          <div className="mainCard">
+            <div className="mainCard">
                 
 
-                    {
-                      searchMovie && searchMovie.map((curval)=>{
-                                return<Link to={`/movie/${curval.imdbID}`}>
-                                <div className="card">
-                                                <img  className="img1" src={curval.Poster} alt="" />
-                                               
-                                                <div className="content">
-                                                    <div className="heart">
-                                                        <img src={heartw} className="heartw" />
-                                                        <img src={heartf} alt="" className="heartw" />
-                                                    </div>
-                                                    <div className="cuTitle">{curval.Title}</div>
-                                                    <div className="year">{curval.Year}</div>
-                                                </div>
-                                       </div>
-                                    </Link>
-                    })
-                                  
-                    }
+            {
+                searchMovie && searchMovie.map((curval)=>{
+                return (
+                    <Link to={`/movie/${curval.imdbID}`}>
+                    <div className="card">
+                            {idArr.includes(curval.imdbID) ? <div className="cont"><img  className="img1 " src={curval.Poster} alt="" />
+                            <img  className="hear cardHeart" src={heartf} alt="" /></div>: <img  className="img1" src={curval.Poster} alt="" />}
+                             
+                        <div className="content">
+                            <div className="heart">
+                                {
+                                    idArr.includes(curval.imdbID) 
+                                    ?   
+                                    <img src={heartf} className="heartw" alt="heartw" onClick={ () => removeHandler(curval.imdbID)} />
+                                    : 
+                                    <img src={heartw} alt="" className="heartw"  onClick={ () => clickHandler(curval.imdbID)} />
+                                }
+                                
+                               
+                            </div>
+                            <div className="cuTitle">{curval.Title}</div>
+                            <div className="year">{curval.Year}</div>
+                        </div>
+                    </div>
+                    </Link>
+                )})
+                            
+            }
                    
-         </div>
+            </div>
         </div>
         
 

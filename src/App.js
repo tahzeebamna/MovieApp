@@ -15,6 +15,8 @@ function App() {
 
   const [idArr, setIdArr] = useState(localStorage.getItem('fav')?localStorage.getItem('fav'):[])
 
+  console.log(idArr)
+  
   return (
 
     <Router>

@@ -120,6 +120,20 @@ input{
     border-radius: 5px;
     
 }
+.cont{
+    
+    width: 160px;    
+    height: 220px;
+    /* margin-left: 20px; */
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity 0.25s;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    border-radius: 5px;
+}
 .content{
     position: absolute;
     top: 0;
@@ -138,35 +152,71 @@ input{
     transition: opacity 0.25s;
     justify-content: flex-start;
     flex-wrap: wrap;
+    border: none;
+    border-radius: 5px;
 }
 .heart{
     background: rgba(0, 0, 0, 0.020);
-position: relative;    
+    position: relative;   
+   
 
+}
+/* .cardHr{
+    position: relative;
+} */
+.cardHeart{
+    position: absolute;
+    /* z-index: 1;
+    opacity: 1; */
+    z-index: 0;
+    top: 25px;
+    right: 3px;
+    height: 25px;
+    width: 25px; 
+    
+    /* margin-left: 90px;
+    margin-top: 5px; */
 }
 .heartw{
     color: #fff !important;
     background: rgba(0, 0, 0, 0.020);
     display: flex;
     justify-content: flex-end;
-    margin-left: 65px;
-    margin-right: -10px;
-    margin-top: 5px;
+    margin-left: 72px;
+    margin-right: -35px;
+    margin-top: 15px;
+    height: 25px;
+    width: 25px;
     
     
+}
+.hear{
+    background: rgba(0, 0, 0, 0.020);
+
+}
+
+.added{
+    width: 90px;
+    position: relative;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 32px;
+    height: 38px;
+    font-size: 15px;
 }
 .heartf{
     color: #fff !important;
     position: absolute;
     top: 0;
     left: 0;
-    margin-top: -10px;
-    opacity: 0;
     background: rgba(0, 0, 0, 0.020);
     display: flex;
     justify-content: flex-end;
     margin-left: 65px;
     margin-right: -10px;
+    height: 25px;
+    width: 25px;
 }
 .cuTitle{
     margin-top: 70px;
@@ -196,26 +246,45 @@ position: relative;
     opacity: 1;
     color: white;
 }
+.add1{
+    background: tomato;
+    z-index: 4;
+}
+
+.headposter{
+    /* width: 80%; */
+    margin-top: 20px;
+    margin-left: -59%;
+}
+.MoviePoster{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* width: 80%; */
+}
 
 .poster{
+    margin-top: 0px;
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     text-align: start;    
 }
 .posterText{
-    width: 35%;
-    margin: 0px;
+    width: 45%;
+    margin: -62px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start ;
 }
 .posterImg{
-    width: 350px;
-    height: 500px;
+    width: 400px;
+    height: 550px;
     border: none;
     border-radius: 10px;
 
@@ -229,8 +298,12 @@ position: relative;
 }
 h1{
     color: white;
-    font-size: 60px;
+    width: 80%;
+    font-size: 80px;
     font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    
      font-family: 'Roboto', sans-serif;
 }
 h4{
@@ -242,13 +315,14 @@ h4{
 }
 p{
     color: white;
-    font-size: 14px;
+    font-size: 15px;
     padding-top: 10px;
 
 
 }
 .p1{
     margin-top: 20px;
+    width: 452px;
 }
 .p2{
     display: flex;
@@ -256,26 +330,32 @@ p{
 }
 .info{
     width: 150px;
-    margin-right: 70px;
+    margin-right: 35px;
 
 }
 h3{
-    color: gray;
+    color: lightslategray;
+    margin-bottom: 0px;
+    margin-top: 14px;
+    width: 167px;
+    height: 41px;
+
 }
 .btn{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     text-align: center;
+    margin: 20px 0 20px 0;
 }
 .btnImd{
     display: flex;
     justify-content: flex-end;
     border-radius: 5px;
-    width: 90px;
-    height: 30px;
+    width: 101px;
+    height: 37px;
     color: #fff;
-    border: 1px grey solid;
+    border: 1px lightslategray solid;
     position: relative;
     padding: 10px;
     margin-right: 20px;
@@ -289,7 +369,7 @@ h3{
     position: absolute;
     top: -0.45px;
     left: -1px;
-    padding: 3px;
+    padding: 6px;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
@@ -299,12 +379,12 @@ h3{
     }
 
 .imdText{
-    margin-left: 18px;
+    margin-left: 28px;
     font-size: 15px;
-    margin-top: -5px !important;
+    margin-top: 0px !important;
 }    
 .rottenM{
-    height: 32px;
+    height: 37px;
     width: 80px;
     position: relative;
     font-size: 18px;
@@ -315,7 +395,7 @@ h3{
     border: 1px grey solid;
 }
 .rotten{
-    height: 31px;
+    height: 35px;
     width: 30px;
     position: absolute;
     top: 0;
@@ -332,7 +412,7 @@ h3{
 
 .add{
     width: 150px;
-    height: 30px;
+    height: 37px;
     color: grey;
     border: 1px grey solid;
     border-radius: 5px;
@@ -342,7 +422,89 @@ h3{
 }
 .imgHeart{
     position: absolute;
-    left: 0;
+    left: 8px;
     height: 15px;
     width: 15px;
+    background: rgba(0, 0, 0, 0.020);
+}
+@media only screen and (max-width: 768px) {
+    .logo{
+        padding: 5px;
+        margin-left: -6%;
+        margin-bottom: 18px;    
+    }
+  
+  .illustration{
+    margin-top: 168px;
+    width: 317px;
+    height: 200px;
+  }
+  .poster{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    margin-left: -165px;
+  }
+
+    h1 {
+        font-size: 65px;
+        margin-top: 13px;
+        width: 358px;
+    }
+    .btn{
+        width: 365px;
+    }
+  
+  
+  .posterImg {
+    width: 350px;
+    height: 450px;
+    margin-left: 53px;
+    margin-top: 70px;
+}
+  .MoviePoster{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* width: 80%; */
+}.p1{   
+     margin-top: 20px;
+    width: 345px;
+}
+.p2 {
+    display: flex;
+    margin-top: 18px;
+    width: 360px;
+}
+.imdText {
+    margin-left: 48px;
+    font-size: 15px;
+    margin-top: 0px !important;
+}
+.rotten {
+    height: 35px;
+    width: 25px;
+    position: absolute;
+    top: 0;
+    left: -0.75px;
+    padding: 6px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: rgba(0, 0, 0, 0.020);
+    background: tomato;
+}
+.rottenText {
+    margin-left: 25px;
+    font-size: 16px;
+}
+.btn{
+    width: 364px;
+}
 }
